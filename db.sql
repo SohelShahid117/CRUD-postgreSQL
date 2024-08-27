@@ -31,3 +31,20 @@ bookdb(# );
 CREATE TABLE
 bookdb=#
 
+bookdb-# \d books
+                         Table "public.books"
+   Column    |          Type          | Collation | Nullable | Default
+-------------+------------------------+-----------+----------+---------
+ id          | integer                |           | not null |
+ name        | character varying(20)  |           |          |
+ description | character varying(255) |           |          |
+ price       | integer                |           |          |
+Indexes:
+    "books_pkey" PRIMARY KEY, btree (id)
+
+INSERT INTO books (id,name,description,price)
+VALUES
+()
+
+
+
